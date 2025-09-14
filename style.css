@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.container {
+    background: rgba(255,255,255,0.95);
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    text-align: center;
+}
+.bolo {
+    margin: 0 auto 24px auto;
+    width: 100px;
+    height: 140px;
+    position: relative;
+}
+.bolo .base {
+    width: 100px;
+    height: 40px;
+    background: #ff4e50;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bolo .camada {
+    width: 90px;
+    height: 30px;
+    background: #f9d423;
+    border-radius: 20px;
+    position: absolute;
+    left: 5px;
+}
+.bolo .camada:first-child {
+    top: 40px;
+}
+.bolo .camada:last-child {
+    top: 70px;
+}
+.bolo .topo {
+    width: 80px;
+    height: 20px;
+    background: #fff;
+    border-radius: 20px 20px 40px 40px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.bolo .vela {
+    width: 8px;
+    height: 28px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 46px;
+    box-shadow: 0 0 6px #f9d423;
+}
+.bolo .vela:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 10px;
+    background: radial-gradient(circle, #f9d423 60%, #ff4e50 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+h1 {
+    color: #ff4e50;
+    margin-bottom: 8px;
+}
+h2 {
+    color: #f9d423;
+    margin-bottom: 18px;
+}
+.mensagem {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 24px;
+}
+.assinatura {
+    font-style: italic;
+    color: #888;
+}
